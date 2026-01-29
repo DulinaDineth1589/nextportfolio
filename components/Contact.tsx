@@ -8,19 +8,19 @@ export default function Contact() {
             <div className="absolute top-1/2 left-0 w-96 h-96 bg-purple-500/20 rounded-full blur-[100px] -translate-y-1/2 -z-10" />
 
             <div className="container mx-auto px-6">
-                <div className="max-w-4xl mx-auto glass-card rounded-3xl p-8 md:p-12 overflow-hidden relative">
+                <div className="max-w-4xl mx-auto glass-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 overflow-hidden relative">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/20 rounded-full blur-[80px]" />
 
-                    <div className="text-center mb-12 relative z-10">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    <div className="text-center mb-8 sm:mb-12 relative z-10">
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                             Let&apos;s Work <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Together</span>
                         </h2>
-                        <p className="text-gray-400">
+                        <p className="text-gray-400 text-sm sm:text-base">
                             Have a project in mind or just want to say hi? I&apos;d love to hear from you.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-12 relative z-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 relative z-10">
                         <div className="space-y-8">
                             <div className="flex items-start gap-4">
                                 <div className="p-3 bg-blue-500/10 rounded-lg text-blue-400">

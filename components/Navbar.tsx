@@ -98,7 +98,7 @@ export default function Navbar() {
                             </Link>
                         ))}
                         <a
-                            href="/resume.pdf"
+                            href="/Dulina_Dineth.pdf"
                             className="text-blue-400 hover:text-blue-300 transition-colors text-sm font-medium"
                         >
                             Resume
