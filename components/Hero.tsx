@@ -9,7 +9,7 @@ export default function Hero() {
             <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/30 rounded-full blur-[100px] animate-pulse" />
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: "2s" }} />
 
-            <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
                 <div className="space-y-8">
                     <div className="space-y-4">
                         <h2 className="text-xl md:text-2xl text-blue-400 font-medium tracking-wide">

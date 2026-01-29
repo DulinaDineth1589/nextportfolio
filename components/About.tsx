@@ -27,9 +27,9 @@ export default function About() {
 
                     <div className="grid grid-cols-1 gap-4">
                         {[
-                            { number: "1+", label: "Years Experience" },
+                            { number: "3+", label: "Years Software Engineering Knowledge (Undergraduate)" },
                             { number: "10+", label: "Projects Completed" },
-                            { number: "24/7", label: "Support" }
+                            { number: "6", label: "Months of Professional Experience as a Software Engineer at Donext Pvt Ltd" }
                         ].map((stat, index) => (
                             <div key={index} className="glass-card p-8 rounded-2xl text-center transform hover:-translate-y-2 transition-transform duration-300">
                                 <h3 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 mb-2">

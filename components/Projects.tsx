@@ -29,24 +29,24 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-20 relative bg-black/50">
-            <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <section id="projects" className="py-12 sm:py-20 relative bg-black/50 scroll-mt-20">
+            <div className="container mx-auto px-4 sm:px-6">
+                <div className="text-center mb-10 sm:mb-16">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                         Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Projects</span>
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
+                    <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base px-2">
                         A selection of projects that showcase my skills and problem-solving abilities.
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     {projects.map((project, idx) => (
                         <div
                             key={idx}
                             className="glass-card rounded-2xl overflow-hidden group hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-300"
                         >
-                            <div className="relative h-48 w-full overflow-hidden">
+                            <div className="relative h-40 sm:h-48 w-full overflow-hidden">
                                 <Image
                                     src={project.image}
                                     alt={project.title}
@@ -69,14 +69,14 @@ export default function Projects() {
                                 </div>
                             </div>
 
-                            <div className="p-6">
-                                <h3 className="text-xl font-bold mb-2 text-white group-hover:text-blue-400 transition-colors">{project.title}</h3>
-                                <p className="text-gray-400 mb-4 text-sm leading-relaxed">{project.description}</p>
-                                <div className="flex flex-wrap gap-2">
+                            <div className="p-4 sm:p-6">
+                                <h3 className="text-base sm:text-xl font-bold mb-2 text-white group-hover:text-blue-400 transition-colors line-clamp-2">{project.title}</h3>
+                                <p className="text-gray-400 mb-4 text-xs sm:text-sm leading-relaxed line-clamp-3">{project.description}</p>
+                                <div className="flex flex-wrap gap-1.5 sm:gap-2">
                                     {project.tags.map((tag, tIdx) => (
                                         <span
                                             key={tIdx}
-                                            className="text-xs px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20"
+                                            className="text-[10px] sm:text-xs px-2 sm:px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20"
                                         >
                                             {tag}
                                         </span>
